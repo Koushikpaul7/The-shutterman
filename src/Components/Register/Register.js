@@ -59,7 +59,6 @@ errorElement=<p className='text-danger'>Error: {error.message}</p>
                 <input type="checkbox" name="check"  /> Remember me
             </div>
             <div>
-             <Link to='/' onClick={navigateHome}>   <button  className='btn btn-link'>Forget password</button></Link>
             </div>
         </div>
         <button className='btn-dark w-100 rounded mb-3 py-2 fw-bold'>Register</button>

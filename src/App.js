@@ -7,6 +7,8 @@ import Login from './Components/Login/Login';
 import Register from './Components/Register/Register';
 import RequireAuth from './Components/RequireAuth/RequireAuth';
 import Booking from './Components/Booking/Booking';
+import Footer from './Components/Footer/Footer';
+import Blog from './Components/Blog/Blog';
 
 
 function App() {
@@ -22,7 +24,9 @@ function App() {
             <Booking></Booking>
           </RequireAuth>
         }></Route>
+        <Route path='/blog' element={<Blog></Blog>}></Route>
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }
