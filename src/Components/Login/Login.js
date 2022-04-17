@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
+import Loading from '../Loading/Loading';
 import SocalMedia from '../SocialMedia/SocalMedia';
 import './Login.css'
 
@@ -21,11 +22,16 @@ const Login = () => {
         user,
         loading,
         error,
-      ] = useSignInWithEmailAndPassword(auth);    
+      ] = useSignInWithEmailAndPassword(auth); 
 
         if(user){
             navigate(from, { replace: true });
         }
+
+        if(loading){
+            return <Loading></Loading>
+        }
+
       let errorElement;
       if(error){
         errorElement=<p className='text-danger'>Error: {error?.message}</p>

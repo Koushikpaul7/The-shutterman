@@ -4,6 +4,7 @@ import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import google from '../../images/google.png'
 import { useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
+import Loading from '../Loading/Loading';
 const SocalMedia = () => {
 
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
@@ -12,6 +13,9 @@ const SocalMedia = () => {
 
     const navigate=useNavigate();
 
+    if(loading){
+        return <Loading></Loading>
+    }
         
     if(user){
         navigate('/')
