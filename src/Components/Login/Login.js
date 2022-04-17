@@ -47,9 +47,11 @@ const Login = () => {
         error,
     ] = useSignInWithEmailAndPassword(auth);
 
-    if (user) {
-        navigate(from, { replace: true });
-    }
+    useEffect(()=>{
+        if (user) {
+            navigate(from, { replace: true });
+        }
+    })
 
     if (loading) {
         return <Loading></Loading>

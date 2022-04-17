@@ -3,6 +3,7 @@ import { Carousel } from 'react-bootstrap';
 import banner1 from '../../images/Banner/banner-1.jpg'
 import banner2 from '../../images/Banner/banner2.webp'
 import banner3 from '../../images/Banner/banner3-new.webp'
+
 const Banner = () => {
     const [index, setIndex] = useState(0);
 

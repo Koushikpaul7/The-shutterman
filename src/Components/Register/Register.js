@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
@@ -22,10 +22,12 @@ const Register = () => {
       ] = useCreateUserWithEmailAndPassword(auth,{sendEmailVerification:true});
       let errorElement;
 
-      if(user){
-        navigate('/')
-    }
-
+      useEffect(()=>{
+        if(user){
+            navigate('/')
+        }
+    
+      })
 
     if(error){
 errorElement=<p className='text-danger'>Error: {error.message}</p>

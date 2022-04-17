@@ -25,13 +25,15 @@ const Blog = () => {
                 <p>Firebase Authentication: We can use the authentication by firebase quite easily.</p>
                 <p>Firebase cloud Storage: It is used store the contents like profile pictures , messages etc which are generated bt the users.</p>
                 <br />
-                <p>Other authentication platform we can use are:</p>
-                <p><ol>
-                    <li>Ory</li>
-                    <li>supabase</li>
-                    <li>Octa</li>
-                    <li>Keycloak etc</li>
-                    </ol></p>
+                <p>Other authentication ways we can use are:</p>
+                    <ol>
+                    <li>Cookie based</li>
+                    <li>Token-based authentication</li>
+                    <li>third party access(OAuth,API-token</li>
+                    <li>OpenId </li>
+                    <li>SAML </li>
+                    </ol>
+                
 
                 <h3>What other services does firebase provide other than authentication?</h3>
                 <p>The services firebase provides without authentication are:

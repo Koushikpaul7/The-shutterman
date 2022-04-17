@@ -9,6 +9,7 @@ import RequireAuth from './Components/RequireAuth/RequireAuth';
 import Booking from './Components/Booking/Booking';
 import Footer from './Components/Footer/Footer';
 import Blog from './Components/Blog/Blog';
+import About from './Components/About/About';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           </RequireAuth>
         }></Route>
         <Route path='/blog' element={<Blog></Blog>}></Route>
+        <Route path='/about' element={<About></About>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
