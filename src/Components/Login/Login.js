@@ -28,7 +28,6 @@ const Login = () => {
       let errorElement;
       if(error){
         errorElement=<p className='text-danger'>Error: {error?.message}</p>
-        console.log(error);
             }
 
 
@@ -45,8 +44,8 @@ const Login = () => {
 
            <h3 className='mb-5'>Login</h3>
             <div className='login-form'>
-                <input ref={emailRef} type="email" name="email" id="" placeholder='Username or email' required/>
-                <input ref={passwordRef} type="password" name="password" id="" placeholder='Password' required />
+                <input ref={emailRef} type="email" name="email" placeholder='Username or email' required/>
+                <input ref={passwordRef} type="password" name="password"  placeholder='Password' required />
             </div>
             <div className='d-flex align-items-center justify-content-between'>
                 <div className='me-5'>
