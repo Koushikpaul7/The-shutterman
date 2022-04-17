@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import SocalMedia from '../SocialMedia/SocalMedia';
 import './Login.css'
@@ -9,6 +9,9 @@ const Login = () => {
     const emailRef = useRef('');
     const passwordRef = useRef('');
     const navigate=useNavigate();
+    const location = useLocation();
+
+    let from = location.state?.from?.pathname || "/";
 
     const navigateRegister=()=>{
         navigate('/register')
@@ -20,11 +23,9 @@ const Login = () => {
         error,
       ] = useSignInWithEmailAndPassword(auth);    
 
-     useEffect(()=>{
         if(user){
-            navigate('/')
+            navigate(from, { replace: true });
         }
-     })
       let errorElement;
       if(error){
         errorElement=<p className='text-danger'>Error: {error?.message}</p>
