@@ -10,21 +10,27 @@ const services=
       price: "$580.00",
       picture: "https://i.pinimg.com/originals/f9/a1/bd/f9a1bd278230d80cb44d1664bddd3041.jpg",
       name: "Engagement package",
-      "description": "In this package i will cover the whole event for couples and the groups. The time will be provided in this package is 3 hours."
+      "description": "In this package i will cover the whole event for couples and the groups. The time will be provided in this package is 3 hours.",
+      copy: '100 copy edited and unlimited raw copy.',
+      copyBig:"2 copy 4r size photo with album."
     },
     {
       id: 2,
       price: "$751.00",
       picture: "https://www.itl.cat/pngfile/big/54-542025_beautiful-pakistani-bridal-couples-wedding-dresses-couples-pic.jpg",
       name: "Wedding package",
-      description: "In this package i will cover the whole event for couples and the groups. The time will be provided in this package is 6 hours"
+      description: "In this package i will cover the whole event for couples and the groups. The time will be provided in this package is 6 hours",
+      copy: '100 copy edited and unlimited raw copy.',
+      copyBig:"2 copy 4r and 1 copy 8r size photo with album."
     },
     {
       id: 3,
       price: "$712.00",
       picture: "https://d397bfy4gvgcdm.cloudfront.net/157358-HL_0192.jpeg",
       name: "Reception Package",
-      description: "In this package i will cover the whole event for couples, potrait and the groups. The time will be provided in this package is 5 hours"
+      description: "In this package i will cover the whole event for couples, potrait and the groups. The time will be provided in this package is 5 hours.",
+      copy: '100 copy edited and unlimited raw copy.',
+      copyBig:"2 copy 4r and 1 copy 8r size photo with album."
     }
   ]
 const Services = () => {
