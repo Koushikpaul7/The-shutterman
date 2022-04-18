@@ -2,6 +2,23 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# List of technologies
+* React
+* Bootstrap
+* javascript
+* Css
+* firebase
+* firebase Hooks
+* React Router
+
+# Feature and Functionality
+* Carousel banner for featured photos
+* Login system with google
+* Login and signup by email and Password
+* private route implementation
+* SPA 
+
+
 ## Available Scripts
 
 In the project directory, you can run:

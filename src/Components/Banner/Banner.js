@@ -21,8 +21,8 @@ const Banner = () => {
                     alt="First slide"
                 />
                 <Carousel.Caption>
-                    <h3>Engagement</h3>
-                    <p>Create Moments in your Engagement </p>
+                    <h3>Reception</h3>
+                    <p>Create Moments in your Reception </p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>

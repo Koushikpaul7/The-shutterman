@@ -7,7 +7,7 @@ const services=
 [
     {
       id: 1,
-      price: "$586.67",
+      price: "$580.00",
       picture: "https://i.pinimg.com/originals/f9/a1/bd/f9a1bd278230d80cb44d1664bddd3041.jpg",
       name: "Engagement package",
       "description": "In this package i will cover the whole event for couples and the groups. The time will be provided in this package is 3 hours."
@@ -23,13 +23,13 @@ const services=
       id: 3,
       price: "$712.00",
       picture: "https://d397bfy4gvgcdm.cloudfront.net/157358-HL_0192.jpeg",
-      name: "Reception",
+      name: "Reception Package",
       description: "In this package i will cover the whole event for couples, potrait and the groups. The time will be provided in this package is 5 hours"
     }
   ]
 const Services = () => {
     return (
-        <div className='container bg-light mx-auto'>
+        <div className='container bg-light '>
         <h2 className='text-dark text-center pt-5'>My Packages</h2>
         <div className='row'>
           {
