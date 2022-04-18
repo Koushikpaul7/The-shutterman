@@ -1,7 +1,7 @@
 import React from 'react';
 import Service from '../Service/Service';
 
-
+import './Services.css'
 
 const services=
 [
@@ -29,8 +29,8 @@ const services=
   ]
 const Services = () => {
     return (
-        <div className='container'>
-        <h2 className='text-primary text-center mt-5'>My Packages</h2>
+        <div className='container bg-light mx-auto'>
+        <h2 className='text-dark text-center pt-5'>My Packages</h2>
         <div className='row'>
           {
               services.map(service=><Service

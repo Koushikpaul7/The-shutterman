@@ -28,7 +28,7 @@ const SocalMedia = () => {
                  <div style={{height:'1px'}} className='bg-primary w-50'></div>
                  </div> 
                  <div>
-                <button onClick={()=>signInWithGoogle()} className='btn btn-info  d-block mx-auto my-4'> <img style={{width:'24px'}} src={google} alt="" /> <span className='px-2'>Google Sign in</span></button>
+                <button onClick={()=>signInWithGoogle()} className='btn btn-light  d-block mx-auto my-4 shadow  shadow-intensity-xl'> <img style={{width:'24px'}} src={google} alt="" /> <span className='px-2'>Google Sign in</span></button>
                
                 </div>
           </div>

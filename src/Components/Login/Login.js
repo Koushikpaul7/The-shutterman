@@ -73,13 +73,13 @@ const Login = () => {
     }
     return (
         <div className='w-50 mx-auto mt-5 '>
-            <div className='container border  rounded p-3 mb-3'>
+            <div className='container border  rounded p-3 mb-3 shadow'>
                 <form onSubmit={handleSubmit} >
 
                     <h3 className='mb-5'>Login</h3>
                     <div className='login-form'>
                         <input ref={emailRef} type="email" name="email" placeholder='Username or email' required />
-                        <input ref={passwordRef} type="password" name="password" placeholder='Password' />
+                        <input ref={passwordRef} type="password" name="password" placeholder='Password' required />
                     </div>
 
                     {errorElement}

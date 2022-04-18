@@ -48,7 +48,7 @@ errorElement=<p className='text-danger'>Error: {error.message}</p>
      
         <div className='w-50 mx-auto mt-5 '>
        <form onSubmit={handleRegister} >
-       <div className='container border  rounded p-3 mb-3'>
+       <div className='container border  rounded p-3 mb-3 shadow'>
         <h3 className='mb-5'>Register</h3>
         <div className='login-form'>
             <input  type="text" name="name"  placeholder='Your name' required />

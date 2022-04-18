@@ -10,6 +10,7 @@ import Booking from './Components/Booking/Booking';
 import Footer from './Components/Footer/Footer';
 import Blog from './Components/Blog/Blog';
 import About from './Components/About/About';
+import Notfound from './Components/NotFound/Notfound';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         }></Route>
         <Route path='/blog' element={<Blog></Blog>}></Route>
         <Route path='/about' element={<About></About>}></Route>
+        <Route path='*' element={<Notfound></Notfound>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
